@@ -4,7 +4,7 @@ import '../styles/Heading.css';
 
 
 const Heading = () => {
-    const nbItems = ['ביקורות', 'ראשי', 'אודות'];
+    const nbItems = [{itemTxt: 'ראשי', href: '/'}, {itemTxt: 'אודות', href: '#about'}, {itemTxt: 'ביקורות', href: '#reviews'}];
     
     return (
         <div className="section heading-container">

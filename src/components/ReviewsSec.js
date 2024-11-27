@@ -19,7 +19,7 @@ const ReviewsSec = ({reviews}) => {
     });
 
     return (
-        <div className="section reviews-section">
+        <div id="reviews" className="section reviews-section">
             <h1 className="heading">לקוחות מספרים</h1>
             <p className="paragraph">הלקוחות שלנו מספרים איך השירות שלנו הוביל אותם להישגים ולמציאת משרות ייחודיות</p>
             <div className="image-slider">

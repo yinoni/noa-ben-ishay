@@ -1,11 +1,12 @@
 .navbar-container{
-    background-image:url('../assets/wave.png');
-    background-repeat:no-repeat;
+    background-color: #272343;
+    border-radius: 0 0 0 200px;
     background-size: cover;
     display: flex;
     align-items: center;
     justify-content: space-evenly;
     position: relative;
+    margin-bottom: 30px;
 }
 
 .navbar-container .logo{

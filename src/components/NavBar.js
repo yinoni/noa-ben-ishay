@@ -3,8 +3,8 @@ import '../styles/NavBar.css';
 import bars from '../assets/bars.svg';
 
 
-const NBItem = ({itemTxt}) => {
-    return <a className="nb-item" href="#">{itemTxt}</a>
+const NBItem = ({item}) => {
+    return <a className="nb-item" href={item.href}>{item.itemTxt}</a>
 }
 
 
@@ -12,7 +12,7 @@ const NavBar = ({items}) => {
     const [openMenu, toggleMenu] = useState(true);
 
     let renderedItems = items.map((item, key) => {
-        return <NBItem key={key} itemTxt={item} />
+        return <NBItem key={key} item={item} />
     });
 
     const onMenuClick = () => {

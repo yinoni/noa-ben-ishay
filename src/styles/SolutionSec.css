@@ -109,4 +109,11 @@
         font-size: 12px;
         
     }
+
+    /*Bottom Part*/
+    .solution-section .bottom-part{
+        row-gap: 70px;
+        column-gap: 90px;
+    }
+
 }
