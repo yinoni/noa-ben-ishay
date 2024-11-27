@@ -23,10 +23,11 @@
 }
 
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 500px) {
     .footer{
         flex-direction: column-reverse;
         text-align: center;
+        margin-top: 250px;
     }
 
     .footer .links .page-links .pl:nth-child(1),

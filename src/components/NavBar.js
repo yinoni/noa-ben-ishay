@@ -9,7 +9,7 @@ const NBItem = ({item}) => {
 
 
 const NavBar = ({items}) => {
-    const [openMenu, toggleMenu] = useState(true);
+    const [openMenu, toggleMenu] = useState(false);
 
     let renderedItems = items.map((item, key) => {
         return <NBItem key={key} item={item} />

@@ -67,16 +67,15 @@
     display: none;
 }
 
-.navbar-container .hidden{
-    display: none;
-}
-
 
 @media screen and (max-width: 1000px) {
     .navbar-container .navbar-menu{
         display: block;
     }
-
+    .navbar-container .hidden{
+        display: none;
+    }
+    
     .navbar-container .navbar-items{
         flex-direction: column;
         position: absolute;
@@ -88,8 +87,8 @@
         top: 110px;
         box-shadow: 1px 2px 10px rgba(0, 0, 0, 0.359);
         z-index: 100;
-        
     }
+
     .navbar-container .navbar-items .nb-item{
         color: #272343;
         margin-bottom: 30px;
