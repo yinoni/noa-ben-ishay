@@ -1,0 +1,103 @@
+To recreate this layout using CSS and a grid system, you can follow these steps:
+
+HTML
+html
+Copy code
+<div class="grid-container">
+  <div class="grid-item">
+    <div class="icon"><!-- Add your icon here --></div>
+    <h3>פרסום משרות באופן יצירתי</h3>
+    <p>משתמש בגישות חדשניות כדי למשוך את המועמדים הנכונים</p>
+  </div>
+  <div class="grid-item">
+    <div class="icon"><!-- Add your icon here --></div>
+    <h3>ניהול תהליך גיוס מלא</h3>
+    <p>אני דואגת לכל שלב בתהליך, כדי שתוכלו להקדיש את זמנכם לדברים החשובים</p>
+  </div>
+  <div class="grid-item">
+    <div class="icon"><!-- Add your icon here --></div>
+    <h3>חיפוש יזום ברשתות החברתיות</h3>
+    <p>ניצול הרשתות החברתיות לאיתור מועמדים פוטנציאליים</p>
+  </div>
+  <div class="grid-item">
+    <div class="icon"><!-- Add your icon here --></div>
+    <h3>ראיונות טלפונים ופרונטליים</h3>
+    <p>להכיר את המועמדים לעומק ולוודא את התאמתם</p>
+  </div>
+  <div class="grid-item">
+    <div class="icon"><!-- Add your icon here --></div>
+    <h3>בדיקת ממליצים</h3>
+    <p>כדי לוודא שהמועמדים מתאימים לצרכים שלכם</p>
+  </div>
+  <div class="grid-item">
+    <div class="icon"><!-- Add your icon here --></div>
+    <h3>סדנת ליווי קריירה</h3>
+    <p>3 מפגשים שיעזרו ממוקדים מא' עד ת', דיוק את קו"ח וכיצד לגשת לראיונות עבודה</p>
+  </div>
+</div>
+CSS
+css
+Copy code
+/* Container for the grid */
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+  padding: 20px;
+  text-align: center;
+  background-color: #fff; /* Optional, matches background */
+}
+
+/* Individual items in the grid */
+.grid-item {
+  border: 1px solid #eee; /* Optional border for styling */
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Icon styling */
+.icon {
+  width: 60px;
+  height: 60px;
+  margin: 0 auto 10px auto;
+  background-color: #eee; /* Placeholder for your icon */
+  border-radius: 50%; /* Makes the icon circular */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.icon img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Heading style */
+.grid-item h3 {
+  font-size: 1.2rem;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+/* Paragraph style */
+.grid-item p {
+  font-size: 1rem;
+  color: #666;
+}
+Explanation:
+Grid System:
+
+grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); ensures a responsive layout where each column is at least 300px wide and adjusts based on screen size.
+gap: 20px; adds spacing between grid items.
+Icons:
+
+Use the div.icon as a container for the icons.
+You can replace the background or add an image inside.
+Text Styling:
+
+Customize the heading (h3) and paragraph (p) to match the original style.
+Responsiveness:
+
+The grid system automatically adjusts the number of columns based on the viewport width.
+Let me know if you'd like further refinements!

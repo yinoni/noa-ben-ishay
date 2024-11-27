@@ -1,0 +1,112 @@
+.solution-section .top-part{
+    background-color: #E3F6F5;
+    position: relative;
+    padding: 50px 50px 150px 50px;
+    text-align: center;
+    margin-bottom: 100px;
+}
+
+.solution-section .top-part .lamp-img{
+    position: absolute;
+    left: 100px;
+    top: -120px;
+    width: 120px;
+}
+
+.top-part .cards-container{
+    display: flex;
+    margin: 100px auto 0 auto;
+    width: 100%;
+    text-align: right;
+    justify-content: space-evenly;
+}
+
+.top-part .cards-container .line{
+    background-color: white;
+    height: 300px;
+    width: 3px;
+}
+
+.top-part .cards-container .solution-card{
+    margin-left: 20px;
+    width: 30%;
+}
+
+.top-part .cards-container .solution-card .heading{
+    font-size: 28px;
+    margin: 0 0 10px auto;
+
+}
+
+.top-part .cards-container .solution-card .paragraph{
+    font-size: 22px;
+
+    line-height: 1.5;
+    margin: 0 0 0 auto;
+}
+
+/*Bottom Part*/
+.solution-section .bottom-part{
+    padding: 0 50px;
+    justify-content: center;
+    display: grid;
+    row-gap: 100px;
+    column-gap: 150px;
+    grid-template-columns: 20% 20% 20%;
+}
+
+
+/*Responsive*/
+@media screen and (max-width: 700px) {
+    .top-part .cards-container{
+        flex-direction: column;
+    }
+
+    .top-part .cards-container .line{
+        display: none;
+    }
+
+    .top-part .cards-container .solution-card{
+        width: 100%;
+        margin-bottom: 50px;
+    }
+
+    .top-part .cards-container .solution-card .heading{
+        font-size: 20px;
+        margin: 0 0 10px auto;
+    
+    }
+    
+    .top-part .cards-container .solution-card .paragraph{
+        font-size: 16px;
+    
+        line-height: 1.5;
+        margin: 0 0 0 auto;
+    }
+
+    .solution-section .bottom-part{
+        grid-template-columns: auto auto;
+    }
+    
+
+    
+    .process-card .paragraph{
+        width: 100%;
+        
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .solution-section .bottom-part{
+        grid-template-columns: auto auto;
+    }
+
+    .process-card .heading{
+        font-size: 14px;
+    }
+    
+    .process-card .paragraph{
+        font-size: 12px;
+        
+    }
+}

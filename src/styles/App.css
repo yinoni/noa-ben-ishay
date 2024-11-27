@@ -1,0 +1,24 @@
+*{
+    margin: 0;
+    padding: 0
+}
+
+body, html, #root{
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+}
+
+/*Text*/
+.heading{
+    color: #272343;
+}
+
+.paragraph{
+    color: #B7B7B7
+}
+
+/*Sections*/
+.section{
+    margin-bottom: 200px;
+}

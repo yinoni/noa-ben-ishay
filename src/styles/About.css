@@ -1,0 +1,133 @@
+.about-section{
+    display: flex;
+    flex-direction: row-reverse;
+    text-align: right;
+    justify-content: space-between;
+    height: 50%;
+    width: 100%;
+    align-items: center;
+}
+
+.about-section .image-container{
+    margin-right: 100px;
+    position: relative;
+    height: 90%;
+    width: 90%;
+}
+
+.about-section .image-container .self-img{
+    width: 500px;
+    height: 500px;
+    border-radius: 50%;
+}
+
+.about-section .image-container::after{
+    content: "";
+    background-color: #E3F6F5;
+    width: 500px;
+    height: 500px;
+    position: absolute;
+    left: -30px;
+    z-index: -100;
+    border-radius: 50%;
+}
+
+.about-section .body-container{
+    margin-right: 100px;
+}
+
+.about-section .body-container .heading{
+    margin-bottom: 30px;
+}
+
+.about-section .body-container .paragraph{
+    width: 70%;
+    margin: 0 0 0 auto;
+    line-height: 1.5;
+    font-size: 20px;
+    margin-bottom: 20px;
+    color: black;
+}
+
+
+@media screen and (max-width: 1000px) {
+    .about-section .image-container .self-img{
+        width: 300px;
+        height: 300px;
+    }
+    
+    .about-section .image-container::after{
+        width: 300px;
+        height: 300px;
+    }
+
+    .about-section .body-container .paragraph{
+        width: 90%;
+        font-size: 16px;
+    }
+    
+}
+
+@media screen and (max-width: 800px) {
+    .about-section{
+        display: flex;
+        flex-direction: column;
+        height: fit-content;
+    }
+
+    .about-section .body-container{
+        margin-right: 50px;
+    }
+
+    .about-section .image-container .self-img{
+        width: 300px;
+        height: 300px;
+        margin-bottom: 50px;
+    }
+
+    .about-section .image-container::after{
+        width: 300px;
+        height: 300px;
+        left: calc(100% - 330px);
+    }
+    
+    .about-section .body-container .paragraph{
+        width: 90%;
+        font-size: 16px;
+    }
+    
+}
+
+@media screen and (max-width: 400px) {
+    .about-section{
+        align-items: center;
+        justify-content: center;
+    }
+
+    .about-section .image-container{
+        margin-right: 0;
+    }
+
+    .about-section .body-container{
+        margin-right: 0px;
+    }
+
+    .about-section .image-container .self-img{
+        align-self: center;
+        
+    }
+
+    .about-section .image-container::after{
+        width: 300px;
+        height: 300px;
+        left: calc(100% - 290px);
+        top: 0;
+        right: 0;
+    }
+    
+    .about-section .body-container .paragraph{
+        width: 90%;
+        font-size: 16px;
+    }
+    
+}
