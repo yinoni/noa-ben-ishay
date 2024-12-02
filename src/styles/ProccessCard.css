@@ -5,9 +5,9 @@
 }
 
 .process-card .icon{
-    border: 5px solid #272343;
+
     padding: 20px;
-    border-radius: 50%;
+    width: 40px;
 }
 
 .process-card .heading{

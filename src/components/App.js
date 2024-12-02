@@ -14,6 +14,7 @@ const App = () => {
         require('../assets/review1.jpeg'),
         require('../assets/review2.jpeg'),
         require('../assets/review3.jpeg'),
+        require('../assets/review4.jpeg')
     ];
 
     return (

@@ -23,6 +23,14 @@
     height: 200px;
     border-radius: 20px;
     box-shadow: 1px 10px 10px rgba(0, 0, 0, 0.225);
+    cursor: pointer;
+}
+
+.reviews-section .image-slider .images-cont .img-btn{
+    background-color: transparent;
+    border: none;
+    outline: none;
+    cursor: pointer;
 }
 
 .reviews-section .image-slider .dots-cont {
@@ -73,9 +81,6 @@
 }
 
 @media screen and (max-width: 600px) {
-    .reviews-section .image-slider .images-cont .card-img:nth-child(1){
-        display: none;
-    }
 
     .reviews-section .image-slider .images-cont .card-img{
         width: 400px;
@@ -84,6 +89,10 @@
 
     .reviews-section .paragraph{
         width: 90%;
+    }
+
+    .reviews-section .image-slider .images-cont .img-btn{
+        display: none;
     }
 }
 

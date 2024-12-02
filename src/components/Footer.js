@@ -9,14 +9,12 @@ const Footer = () => {
         <div className="footer">
             <div className="links">
                 <div className="page-links">
-                    <a className="pl" href="#">ביקורות</a>
-                    <a className="pl" href="#">אודות</a>
+                    <a className="pl" href="#reviews">ביקורות</a>
+                    <a className="pl" href="#about">אודות</a>
                     <a className="pl" href="#">ראשי</a>
                 </div>
                 <div className="social-links">
-                    <a className="sl" href="#"><img className="sl" alt="sl" src={fb} /></a>
-                    <a className="sl" href="#"><img className="sl" alt="sl" src={ins} /></a>
-                    <a className="sl" href="#"><img className="sl" alt="sl" src={li} /></a>
+                    <a className="sl" href="https://www.linkedin.com/in/noa-ben-ishay-320462158/"><img className="sl" alt="sl" src={li} /></a>
                 </div>
 
             </div>
