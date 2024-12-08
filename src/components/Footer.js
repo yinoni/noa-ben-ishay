@@ -11,7 +11,7 @@ const Footer = () => {
                 <div className="page-links">
                     <a className="pl" href="#reviews">ביקורות</a>
                     <a className="pl" href="#about">אודות</a>
-                    <a className="pl" href="#">ראשי</a>
+                    <a className="pl" href="/">ראשי</a>
                 </div>
                 <div className="social-links">
                     <a className="sl" href="https://www.linkedin.com/in/noa-ben-ishay-320462158/"><img className="sl" alt="sl" src={li} /></a>
