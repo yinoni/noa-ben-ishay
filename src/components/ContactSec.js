@@ -2,9 +2,9 @@ import React from "react";
 import arrowLeft from '../assets/arrow-left.svg';
 import '../styles/ContactSec.css';
 
-const ContactSec = () => {
+const ContactSec = ({ref}) => {
     return (
-        <div className="section contact-sec">
+        <div ref={ref} className="section contact-sec">
             <img className="illustration" alt="illustration" src={require('../assets/contact.png')} />
             <button className="contact-btn">
                 <h1 className="heading">?מוכנים למצוא את העובד הבא שלכם</h1>

@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useRef} from "react";
 import Heading from "./Heading";
 import SolutionSec from "./SolutionSec";
 import About from "./About";
@@ -9,21 +9,29 @@ import '../styles/App.css';
 
 
 
+
 const App = () => {
     const reviews = [
-        require('../assets/review1.jpeg'),
+        require('../assets/review1.jpg'),
         require('../assets/review2.jpeg'),
-        require('../assets/review3.jpeg'),
-        require('../assets/review4.jpeg')
+        require('../assets/review3.jpeg')
     ];
+
+    const ref = useRef(null);
+
+    const handleClick = () => {
+        ref.current?.scrollIntoView({behavior: 'smooth'});
+    }
 
     return (
         <>
-            <Heading />
+            <Heading onClickContact={handleClick} />
             <SolutionSec />
             <About />
             <ReviewsSec reviews={reviews} />
-            <ContactSec />
+            <div ref={ref} className='contact-me-section'>
+                <ContactSec />
+            </div>
             <Footer />
         </>
     );

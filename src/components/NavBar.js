@@ -8,7 +8,7 @@ const NBItem = ({item}) => {
 }
 
 
-const NavBar = ({items}) => {
+const NavBar = ({items, onClickContact}) => {
     const [openMenu, toggleMenu] = useState(false);
 
     let renderedItems = items.map((item, key) => {
@@ -24,7 +24,7 @@ const NavBar = ({items}) => {
             <img className="logo" alt="logo" src={require('../assets/logo.png')} />
             <div className={`navbar-items ${!openMenu ? 'hidden' : ''}`}>
                 {renderedItems}
-                <button className="contact-btn">צרו קשר</button>
+                <button onClick={onClickContact} className="contact-btn">צרו קשר</button>
             </div>
             <button className="navbar-menu" onClick={onMenuClick}><img src={bars} alt="bars" /></button>
 
