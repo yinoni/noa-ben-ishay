@@ -18,7 +18,7 @@ const Heading = ({onClickContact}) => {
                 <div className="text-container">
                     <h1 className="heading">הפתרון המדויק לגיוס עובדים מנוסים נמצא אצלי</h1>
                     <p className="paragraph">שירותי הד האנטינג והשמה בהתאמה אישית לחברות שמחפשות את המועמדים המובילים בשוק</p>
-                    <button className="contact-btn">צרו קשר לקבלת ייעוץ</button>
+                    <button onClick={onClickContact} className="contact-btn">צרו קשר לקבלת ייעוץ</button>
                 </div>
                 
             </div>
